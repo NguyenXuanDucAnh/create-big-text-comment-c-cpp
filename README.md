@@ -4,7 +4,7 @@
 
 **Comment lớn giúp bạn dễ dàng tìm kiếm hàm hơn khi mở ô cửa sổ nhỏ:**
 
-![alt text](image\image.png)
+![alt text](Image\image_demo.png)
 
 ## ✨ Tính năng chính
 

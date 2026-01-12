@@ -3,9 +3,9 @@
   "name": "ascii-comment-generator",
   "displayName": "ASCII Comment Generator",
   "description": "Generate beautiful ASCII art comments for C/C++",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "engines": {
-    "vscode": "^1.80.0"
+    "vscode": "^1.60.0"
   },
   "author": {
     "name": "Nguyễn Xuân Đức Anh"
@@ -52,11 +52,15 @@
     "test": "vscode-test"
   },
   "devDependencies": {
-    "@types/vscode": "^1.80.0",
+    "@types/vscode": "^1.60.0",
     "@types/node": "16.x",
     "@typescript-eslint/eslint-plugin": "^5.59.0",
     "@typescript-eslint/parser": "^5.59.0",
     "eslint": "^8.41.0",
     "typescript": "^5.0.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/NguyenXuanDucAnh/create-big-text-comment-c-cpp.git"
   }
 }
