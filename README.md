@@ -1,71 +1,239 @@
-# create-big-text-comment-c-cpp README
+# ASCII Comment Generator for C/C++
 
-This is the README for your extension "create-big-text-comment-c-cpp". After writing up a brief description, we recommend including the following sections.
+**Tạo comment nghệ thuật ASCII đẹp mắt cho code C/C++ của bạn một cách nhanh chóng và dễ dàng!**
 
-## Features
+## ✨ Tính năng chính
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+### 🎨 Tạo ASCII Art Comment tự động
+- Chuyển đổi text thành ASCII art với phong cách pixel/block art đẹp mắt
+- Hỗ trợ đầy đủ 26 chữ cái tiếng Anh (A-Z)
+- Định dạng chuẩn với chiều cao 7 dòng cho mỗi chữ cái
 
-For example if there is an image subfolder under your extension project workspace:
+### ⚡ Trigger nhanh chóng
 
-\!\[feature X\]\(images/feature-x.png\)
+**Cách 1: Auto-trigger** 
+- Gõ `/**bt` và nhấn **Enter**
+- Input box sẽ tự động xuất hiện
+- Nhập text bạn muốn → Comment được tạo ngay lập tức!
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+**Cách 2: Keyboard shortcut**
+- `Ctrl+Shift+A` (Windows/Linux)
+- `Cmd+Shift+A` (macOS)
 
-## Requirements
+**Cách 3: Command Palette**
+- `Ctrl+Shift+P` → Gõ "Generate ASCII Comment"
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+### 🎯 Hỗ trợ 2 kiểu comment
 
-## Extension Settings
+**Block Comment (/* */)**
+```c
+/*
+ * .##....##...########...##.......##.......#######..
+ * .##....##...##.........##.......##......##.....##.
+ * .##....##...##.........##.......##......##.....##.
+ * .########...######.....##.......##......##.....##.
+ * .##....##...##.........##.......##......##.....##.
+ * .##....##...##.........##.......##......##.....##.
+ * .##....##...########...########.########..#######..
+ */
+```
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
+**Line Comment (//)**
+```cpp
+// .##....##...########...##.......##.......#######..
+// .##....##...##.........##.......##......##.....##.
+// .##....##...##.........##.......##......##.....##.
+// .########...######.....##.......##......##.....##.
+// .##....##...##.........##.......##......##.....##.
+// .##....##...##.........##.......##......##.....##.
+// .##....##...########...########.########..#######..
+```
 
-For example:
+### 🛡️ An toàn và thông minh
 
-This extension contributes the following settings:
-
-* `myExtension.enable`: Enable/disable this extension.
-* `myExtension.thing`: Set to `blah` to do something.
-
-## Known Issues
-
-Calling out known issues can help limit users opening duplicate issues against your extension.
-
-## Release Notes
-
-Users appreciate release notes as you update your extension.
-
-### 1.0.0
-
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
+- **Language-aware**: Chỉ hoạt động với file C/C++ (.c, .cpp, .h, .hpp)
+- **Input validation**: Kiểm tra input hợp lệ (chỉ chữ cái A-Z và khoảng trắng)
+- **Smart positioning**: Tự động insert comment đúng vị trí cursor
+- **Clean code**: Tự động xóa trigger `/**bt` sau khi sử dụng
 
 ---
 
-## Following extension guidelines
+## 📦 Cài đặt
 
-Ensure that you've read through the extensions guidelines and follow the best practices for creating your extension.
+### Cách 1: Từ VS Code Marketplace
+1. Mở VS Code
+2. Nhấn `Ctrl+Shift+X` để mở Extensions
+3. Tìm kiếm "ASCII Comment Generator"
+4. Click **Install**
 
-* [Extension Guidelines](https://code.visualstudio.com/api/references/extension-guidelines)
+### Cách 2: Từ file .vsix
 
-## Working with Markdown
+**Qua giao diện (Khuyên dùng)**
+1. Mở VS Code
+2. Nhấn `Ctrl+Shift+X` để mở Extensions
+3. Click biểu tượng `...` (góc trên bên phải)
+4. Chọn **"Install from VSIX..."**
+5. Chọn file `.vsix` đã tải về
+6. Đợi thông báo cài đặt thành công
 
-You can author your README using Visual Studio Code. Here are some useful editor keyboard shortcuts:
+**Qua Command Line**
+```bash
+code --install-extension ascii-comment-generator-0.0.1.vsix
+```
 
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux).
-* Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux).
-* Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets.
+**Kéo thả**
+- Kéo file `.vsix` vào cửa sổ VS Code Extensions panel
 
-## For more information
+---
 
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
+## 🚀 Hướng dẫn sử dụng
 
-**Enjoy!**
+### Sử dụng nhanh
+1. Mở file C/C++ (.c, .cpp, .h, .hpp)
+2. Đặt cursor ở vị trí muốn tạo comment
+3. Gõ `/**bt` và nhấn **Enter** hoặc sử dụng phím tắt ```ctrl + shift + A ```
+4. Nhập text (ví dụ: "HELLO WORLD")
+5. Chọn kiểu comment (Block hoặc Line)
+6. Comment ASCII art được tạo tự động!
+
+### Các cách kích hoạt
+
+| Phương thức | Thao tác |
+|------------|----------|
+| Auto-trigger | Gõ `/**bt` + Enter |
+| Keyboard shortcut | `Ctrl+Shift+A` (Win/Linux)<br>`Cmd+Shift+A` (Mac) |
+| Command Palette | `Ctrl+Shift+P` → "Generate ASCII Comment" |
+
+---
+
+## 🎓 Ví dụ sử dụng
+
+### 1. Phân chia sections trong code
+```c
+/*
+ * .########....###....########....###...
+ * .##.....##..##.##......##......##.##..
+ * .##.....##.##...##.....##.....##...##.
+ * .##.....##.##...##.....##.....##...##.
+ * .##.....##.#########....##.....#########
+ * .##.....##.##.....##....##.....##.....##
+ * .########..##.....##....##.....##.....##
+ */
+
+struct Data {
+    int value;
+    char name[50];
+};
+```
+
+### 2. Đánh dấu hàm quan trọng
+```cpp
+/*
+ * .##.....##....###....####.##....##
+ * .###...###...##.##....##..###...##
+ * .####.####..##...##...##..####..##
+ * .##.###.##.##.....##..##..##.##.##
+ * .##.....##.#########..##..##..####
+ * .##.....##.##.....##..##..##...###
+ * .##.....##.##.....##.####.##....##
+ */
+
+int main() {
+    printf("Hello, World!\n");
+    return 0;
+}
+```
+
+### 3. Header cho module
+```c
+/*
+ * .##.....##.########.####.##.......
+ * .##.....##....##.....##..##.......
+ * .##.....##....##.....##..##.......
+ * .##.....##....##.....##..##.......
+ * .##.....##....##.....##..##.......
+ * .##.....##....##.....##..##.......
+ * ..#######.....##....####.########.
+ */
+
+// Utility functions
+```
+
+---
+
+## 💡 Tips & Tricks
+
+- **Ngắn gọn hơn**: Dùng từ 3-10 chữ cái cho kết quả đẹp nhất
+- **Phân chia code**: Đánh dấu sections như MAIN, DATA, UTILS, CONFIG
+- **Header files**: Tạo banner cho tên module/library
+- **Code review**: Làm code professional và dễ đọc hơn
+- **Navigation**: Dễ dàng nhảy giữa các phần code lớn
+
+---
+
+## 📋 Yêu cầu hệ thống
+
+- Visual Studio Code phiên bản **1.80.0** trở lên
+- Không cần dependencies bổ sung
+
+---
+
+## 🔧 Cấu hình
+
+Extension hoạt động ngay sau khi cài đặt, không cần cấu hình thêm!
+
+---
+
+## 📝 Giới hạn hiện tại
+
+- Chỉ hỗ trợ chữ cái A-Z (chưa hỗ trợ số và ký tự đặc biệt)
+- Chỉ hoạt động với file C/C++
+- ASCII art có độ rộng cố định cho mỗi chữ cái
+
+---
+
+## 🛠️ Build từ source
+
+### Yêu cầu
+- Node.js 16.x trở lên
+- npm hoặc yarn
+
+### Các bước build
+
+```bash
+# 1. Clone repository
+git clone <repository-url>
+cd ascii-comment-generator
+
+# 2. Cài đặt dependencies
+npm install
+
+# 3. Compile TypeScript
+npm run compile
+
+# 4. Tạo file .vsix
+npm install -g @vscode/vsce
+vsce package --allow-missing-repository
+```
+
+File `.vsix` sẽ được tạo trong thư mục hiện tại.
+
+---
+
+## 🐛 Báo lỗi & Góp ý
+
+Nếu bạn gặp vấn đề hoặc có ý tưởng cải thiện, vui lòng tạo issue trên GitHub repository.
+
+---
+
+## 📄 License
+
+MIT License - Xem file LICENSE để biết thêm chi tiết.
+
+---
+
+## 🎉 Enjoy!
+
+**Làm việc với code vui hơn cùng ASCII Comment Generator!** 🚀
+
+---
