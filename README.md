@@ -2,6 +2,10 @@
 
 **Tạo comment nghệ thuật ASCII đẹp mắt cho code C/C++ của bạn một cách nhanh chóng và dễ dàng!**
 
+**Comment lớn giúp bạn dễ dàng tìm kiếm hàm hơn khi mở ô cửa sổ nhỏ:**
+
+![alt text](image\image.png)
+
 ## ✨ Tính năng chính
 
 ### 🎨 Tạo ASCII Art Comment tự động
@@ -60,7 +64,7 @@
 
 ## 📦 Cài đặt
 
-### Cách 1: Từ VS Code Marketplace
+### Cách 1: Từ VS Code Marketplace 
 1. Mở VS Code
 2. Nhấn `Ctrl+Shift+X` để mở Extensions
 3. Tìm kiếm "ASCII Comment Generator"
