@@ -27,7 +27,7 @@ export function activate(context: vscode.ExtensionContext) {
             return;
         }
 
-        // Kiểm tra xem có gõ "/**bt" + Enter không
+        // Kiểm tra xem có gõ "//bt" + Enter không
         const text = change.text;
         if (text === '\n' || text === '\r\n') {
             const position = editor.selection.active;

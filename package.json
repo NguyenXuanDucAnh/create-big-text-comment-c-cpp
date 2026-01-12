@@ -1,21 +1,45 @@
 {
-  "name": "create-big-text-comment-c-cpp",
-  "displayName": "create-big-text-comment-c-cpp",
-  "description": "create big text comment for c/cpp language",
+  "publisher": "ADN-Linux",
+  "name": "ascii-comment-generator",
+  "displayName": "ASCII Comment Generator",
+  "description": "Generate beautiful ASCII art comments for C/C++",
   "version": "0.0.1",
   "engines": {
-    "vscode": "^1.108.1"
+    "vscode": "^1.80.0"
   },
+  "author": {
+    "name": "Nguyễn Xuân Đức Anh"
+  },
+  "icon": "icon/icon-app.png",
   "categories": [
     "Other"
   ],
-  "activationEvents": [],
+  "keywords": [
+    "c",
+    "cpp",
+    "c++",
+    "function",
+    "search",
+    "find"
+  ],
+  "activationEvents": [
+    "onLanguage:c",
+    "onLanguage:cpp"
+  ],
   "main": "./out/extension.js",
   "contributes": {
     "commands": [
       {
-        "command": "create-big-text-comment-c-cpp.helloWorld",
-        "title": "Hello World"
+        "command": "ascii-comment.generate",
+        "title": "Generate ASCII Comment"
+      }
+    ],
+    "keybindings": [
+      {
+        "command": "ascii-comment.generate",
+        "key": "ctrl+shift+a",
+        "mac": "cmd+shift+a",
+        "when": "editorTextFocus && (editorLangId == c || editorLangId == cpp)"
       }
     ]
   },
@@ -28,13 +52,11 @@
     "test": "vscode-test"
   },
   "devDependencies": {
-    "@types/vscode": "^1.108.1",
-    "@types/mocha": "^10.0.10",
-    "@types/node": "22.x",
-    "typescript-eslint": "^8.48.1",
-    "eslint": "^9.39.1",
-    "typescript": "^5.9.3",
-    "@vscode/test-cli": "^0.0.12",
-    "@vscode/test-electron": "^2.5.2"
+    "@types/vscode": "^1.80.0",
+    "@types/node": "16.x",
+    "@typescript-eslint/eslint-plugin": "^5.59.0",
+    "@typescript-eslint/parser": "^5.59.0",
+    "eslint": "^8.41.0",
+    "typescript": "^5.0.4"
   }
 }
